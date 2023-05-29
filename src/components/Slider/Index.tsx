@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Slider from "react-slick";
+import Image from "next/image";
 
 const CarSlider = () => {
   var settings = {
@@ -47,7 +48,7 @@ const CarSlider = () => {
     <Slider {...settings} arrows={false} className="mt-140">
       {partnerLogos.map((logo, index) => (
         <Link href={'#'} className="item" key={index}>
-          <img src={logo} alt="" className="m-auto" id="slide-image"/>
+          <Image src={logo} alt="" className="m-auto" id="slide-image"/>
           <label htmlFor="slide-image">hello</label>
         </Link>
       ))}

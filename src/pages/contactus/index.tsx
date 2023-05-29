@@ -4,6 +4,7 @@ import ContactForm from "../../components/contact/ContactForm";
 import Map from "../../components/Map/Map";
 import DefaultFooter from "../../components/footer/DefaultFooter";
 import DefaulHeader from "../../components/header/DeafultHeader";
+import Image from "next/image";
 
 const contact = () => {
   return (
@@ -35,7 +36,7 @@ const contact = () => {
           </div>
         </div>
         {/* /.container */}
-        <img
+        <Image
           src="/images/shape/shape_172.svg"
           alt="shape"
           className="lazy-img shapes shape-two"

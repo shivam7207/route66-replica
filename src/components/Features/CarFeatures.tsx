@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 const icons = [
     {
@@ -87,7 +88,7 @@ function CarFeatures() {
                         <div className="circle-two rounded-circle position-relative">
                             <div>
                                 {icons.map((icon, index) => (
-                                    <img
+                                    <Image
                                         key={index}
                                         src={icon.src}
                                         alt={icon.alt}
@@ -97,7 +98,7 @@ function CarFeatures() {
                             </div>
                             {/* <div className="circle-three rounded-circle position-relative" /> */}
                             {/* <div className="mobile-screen"> */}
-                            <img
+                            <Image
                                 src="/images/assets/car.png"
                                 alt="shape"
                                 className="lazy-img circle-three"
@@ -108,7 +109,7 @@ function CarFeatures() {
                     {/* End circle  */}
 
 
-                    <img
+                    <Image
                         src="/images/shape/shape_47.svg"
                         alt="shape"
                         className="lazy-img shapes fancy-shape"

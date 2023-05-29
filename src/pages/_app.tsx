@@ -8,10 +8,12 @@ if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
 }
 
-export default function App({ Component, pageProps }:{
-  Component: any,
-  pageProps: any
-}) {
+interface AppProps {
+  Component: React.ComponentType;
+  pageProps: any;
+}
+
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {
     Aos.init({
       duration: 1200,
@@ -24,4 +26,6 @@ export default function App({ Component, pageProps }:{
       <ScrollToTop />
     </div>
   );
-}
+};
+
+export default App;

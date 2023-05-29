@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const CarBanner = () => {
     const features = [
@@ -54,22 +55,22 @@ const CarBanner = () => {
 
                     <div className="col-lg-6 wow fadeInRight">
                         <div className="illustration-holder position-relative pt-50 pb-50 pe-md-5 lg-mt-80">
-                            <img
+                            <Image
                                 src="images/assets/car_about_banner.jpg"
                                 alt=""
                                 className="lazy-img main-img ms-auto"
                             />
-                            {/* <img
+                            {/* <Image
                                 src="images/media/img_56.png"
                                 alt=""
                                 className="lazy-img screen-two"
                             /> */}
-                            {/* <img
+                            {/* <Image
                                 src="images/shape/shape_139.svg"
                                 alt=""
                                 className="lazy-img shapes shape-one"
                             />
-                            <img
+                            <Image
                                 src="images/shape/shape_140.svg"
                                 alt=""
                                 className="lazy-img shapes shape-two"
